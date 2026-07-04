@@ -2,8 +2,13 @@
 #include "Param.h"
 class Turn
 {
-public:
+private:
 	Parameter Param;
-	Turn();
+
+public:
+	void PlayerAttack();
+
+	void EnemyAttack();
+
 };
 

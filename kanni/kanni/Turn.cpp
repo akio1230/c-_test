@@ -3,11 +3,14 @@
 #include <iostream>
 
 
-Turn::Turn()
+void Turn::PlayerAttack()
 {
-	srand((unsigned)time(NULL));
+	Param.attack = rand() % 21;
+	std::cout << Param.attack << std::endl;
+}
 
-	Turn* pPlayer = new Turn;
-	Turn* pSlime = new Turn;
-	Turn* pGoblin = new Turn;
+void Turn::EnemyAttack()
+{
+	Param.attack = rand() % 11;
+	std::cout << Param.attack << std::endl;
 }
